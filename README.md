@@ -1,6 +1,6 @@
 # Louisville Crime Report Analysis
 
-Analysis of crime data from Louisville Metro Police Department (2003-2025).
+Analysis of crime data from Louisville Metro Police Department (2004-2025). The goal of the project is to understand reported crime trends within the Louisville community by zip code and offense classifications. Further contextual analysis will determine key drivers of crime increases and decreases such as events, policies, and hiring.
 
 ## Setup Instructions
 
@@ -22,40 +22,36 @@ python3 -m venv venv
 # On macOS/Linux:
 source venv/bin/activate
 # On Windows:
-# venv\Scripts\activate
+venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Install Jupyter kernel (if using VS Code or Jupyter)
-python -m ipykernel install --user --name=lou_crime_report --display-name="Python (lou_crime_report)"
-
-# Start Jupyter Notebook
-jupyter notebook
 ```
 
-### Running the Analysis
+### Running the Notebook
 
-1. After activating the virtual environment, open the notebook:
-   ```bash
-   jupyter notebook notebooks/lou_crime_report.ipynb
-   ```
+```bash
+# Option 1: Using Jupyter Notebook
+jupyter notebook notebooks/lou_crime_report.ipynb
 
-2. In VS Code:
-   - Open `notebooks/lou_crime_report.ipynb`
-   - Select the kernel: `Python (lou_crime_report)`
-   - Run all cells
+# Option 2: In VS Code
+# Open notebooks/lou_crime_report.ipynb and select the Python kernel
+```
 
 ## Project Structure
 
 ```
 lou_crime_report/
-├── data/                       # Crime data CSV files (2003-2025)
-├── notebooks/                  # Jupyter notebooks with analysis
+├── data/                       # Crime data CSV files (2004-2025)
+│   ├── Crime_Data_2004.csv
+│   ├── Crime_Data_2005.csv
+│   └── ...
+├── notebooks/                  # Jupyter notebooks
 │   └── lou_crime_report.ipynb
 ├── venv/                       # Virtual environment (not in git)
-├── requirements.txt            # Python dependencies
-└── README.md                   # This file
+├── .gitignore
+├── requirements.txt
+└── README.md
 ```
 
 ## Data Source
@@ -65,17 +61,11 @@ Crime data obtained from [Louisville Metro Open Data Portal](https://data.louisv
 ## Dependencies
 
 - Python 3.9+
-- pandas 1.3.4
-- numpy 1.20.3
-- matplotlib 3.4.3
+- pandas
+- numpy
+- matplotlib
+- seaborn
 - jupyter
 - notebook
 
 See `requirements.txt` for complete list.
-
-## Deactivating the Environment
-
-When you're done working:
-```bash
-deactivate
-```
