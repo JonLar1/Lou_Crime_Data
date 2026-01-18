@@ -12,7 +12,7 @@ Analysis of crime data from Louisville Metro Police Department (2004-2025). The 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone <https://github.com/JonLar1/Lou_Crime_Data>
 cd lou_crime_report
 
 # Create a virtual environment
@@ -38,21 +38,18 @@ jupyter notebook notebooks/lou_crime_report.ipynb
 # Open notebooks/lou_crime_report.ipynb and select the Python kernel
 ```
 
-## Project Structure
+## Objectives
+In 2003 Jefferson County merged with the city of Louisville, KY to become Louisville Metro Government resulting in the police force combining into one department across the entire county thus reporting all crime in standardized output.
 
-```
-lou_crime_report/
-├── data/                       # Crime data CSV files (2004-2025)
-│   ├── Crime_Data_2004.csv
-│   ├── Crime_Data_2005.csv
-│   └── ...
-├── notebooks/                  # Jupyter notebooks
-│   └── lou_crime_report.ipynb
-├── venv/                       # Virtual environment (not in git)
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
+I'd like to understand in depth how crime has changed over time, what the key drivers are, how has crime impacted the community, and determine what are the most effective policies for crime deterrence.
+
+## Continuing Questions
+* What is the most dangerous zip codes for Weapons and Drug/Alcohol Violations? Show on a map.
+* What are the key drivers of crime detterence and impacts on community? (correlations between count of police officers, events/gov't policies. Join census data by zip code)
+
+## Conclusions
+* Total reported crime has decreased since 2004 driven primarily by a decrease in Drug/Alcohol Violations and Burglary while Weapons related crime continued to rise from 2004 to 2021. 
+
 
 ## Data Source
 
@@ -69,3 +66,6 @@ Crime data obtained from [Louisville Metro Open Data Portal](https://data.louisv
 - notebook
 
 See `requirements.txt` for complete list.
+
+## Author
+Jon Larson - Data Analyst
