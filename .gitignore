@@ -4,3 +4,9 @@ __pycache__/
 .DS_Store
 *.pyc
 .env
+
+# Large generated data files — recreate by running the notebook
+data/crime_data_cleaned.csv
+data/lou_crime.db
+data/*.csv
+data/*.db
